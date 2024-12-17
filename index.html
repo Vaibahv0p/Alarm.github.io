@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="hour hand" id="hour"></div>
+        <div class="minute hand" id="minute"></div>
+        <div class="seconds hand" id="seconds"></div>
+    </div>
+    <div class="controls">
+        <div class="alarm">
+            <h2>Set Alarm</h2>
+            <input type="time" id="alarmTime" class="input">
+            <button id="setAlarm" class="button">Set Alarm</button>
+            <div id="alarmMessage" class="time">Alarm not set</div>
+        </div>
+        <div class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div id="stopwatchTime" class="time">00:00</div>
+            <button id="startStopwatch" class="button">Start</button>
+            <button id="resetStopwatch" class="button">Reset</button>
+        </div>
+        <div class="timer">
+            <h2>Timer</h2>
+            <input type="number" id="timerInput" class="input" placeholder="Minutes" min="1">
+            <button id="startTimer" class="button">Start Timer</button>
+            <div id="timerDisplay" class="time">00:00</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
