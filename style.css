@@ -1,1 +1,91 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #b129ff 50%, #fd49c4 50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align the clock to the top */
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px; /* Add some space from the top */
+}
+.clock {
+    background: #16191e;
+    height: 320px;
+    width: 320px;
+    position: relative;
+    border-radius: 50%;
+    border: 15px solid #242931;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.2),
+                inset 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.hand {
+    position: absolute;
+    background-color: #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+.hour {
+    height: 60px;
+    width: 10px;
+    top: 100px;
+}
+.minute {
+    height: 80px;
+    width: 5px;
+    top: 80px;
+}
+.seconds {
+    height: 90px;
+    width: 3px;
+    top: 70px;
+    background-color: #2987e4;
+}
+.controls {
+    position: absolute;
+    top: 380px; /* Adjusted the top value to place controls below the clock */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+.controls .alarm, .controls .stopwatch, .controls .timer {
+    margin-bottom: 30px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.input {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+}
+.button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    width: 100%;
+    transition: background 0.3s;
+}
+.button:hover {
+    background: #0056b3;
+}
+.time {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
